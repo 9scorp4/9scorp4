@@ -7,12 +7,17 @@ I am a master's student in anthropology based in Montreal. I like coding, music,
 ## 🛠️Skills
 - Python (since last year)
 - (to be learned) R, SQL
+
 ## 🔭Current projects
 - ✊[﻿labrri_ocpm_systemic_racism:](https://github.com/9scorp4/labrri_ocpm_systemic_racism)  Data analysis toolkit to study systemic racism in Montreal (🟡IN DEVELOPMENT, OPEN TO CONTRIBUTIONS)
+
 ## 📊GitHub Stats
+![9scorp4's Stats](https://github-readme-stats.vercel.app/api?username=9scorp4&theme=dark&show_icons=true&hide_border=true&count_private=true)
+
 ## 🎯Goals for 2024
 - Keep learning Python
 - Finish my master's thesis?
+
 ## 📫How to reach me
 - [﻿LinkedIn](https://www.linkedin.com/in/nicag/) 
 - (PORTFOLIO IN DEVELOPMENT)
