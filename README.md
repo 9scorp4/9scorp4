@@ -1,28 +1,51 @@
-<p><a target="_blank" href="https://app.eraser.io/workspace/EK4DaBR1pMoFisETez3n" id="edit-in-eraser-github-link"><img alt="Edit in Eraser" src="https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fgithub%2FOpen%20in%20Eraser.svg?alt=media&amp;token=968381c8-a7e7-472a-8ed6-4a6626da5501"></a></p>
+# Hey there, I'm Nicolas Arias Garcia 👋
 
-# Hey there, I'm Nicolas 👋
-## 🚀About me
-I am a master's student in anthropology based in Montreal. I like coding, music, arts, and humanities. My interest is to find the intersection between those fields.
+## 🔍 Research & Technology Interface
+*Digital anthropologist | Systems Thinker | Research Methodologist*
 
-## 🛠️Skills
-- Python (since last year)
-- (to be learned) R, SQL
+### 🚀 Professional Lens
+Bridging qualitative insights with computational techniques to transform complex social research. Specializing in innovative methodological approaches that integrate technology and human understanding.
 
-## 🔭Current projects
-- ✊[﻿labrri_ocpm_systemic_racism:](https://github.com/9scorp4/labrri_ocpm_systemic_racism)  Data analysis toolkit to study systemic racism in Montreal (🟡IN DEVELOPMENT, OPEN TO CONTRIBUTIONS)
+## 🛠️ Technical Ecosystem
 
-## 📊GitHub Stats
-![9scorp4's Stats](https://github-readme-stats.vercel.app/api?username=9scorp4&theme=dark&show_icons=true&hide_border=true&count_private=true)
+### Languages & Tools
+- **Primary**: Python 
+  - Data analysis
+  - NLP pipelines
+  - Research automation
+- **Emerging Skills**: 
+  - R (in development)
+  - SQL fundamentals
 
-## 🎯Goals for 2024
-- Keep learning Python
-- Finish my master's thesis?
+### Methodological Toolkit
+- Mixed-methods research design
+- Computational social science
+- Multilingual text analysis
+- AI-assisted research techniques
 
-## 📫How to reach me
-- [﻿LinkedIn](https://www.linkedin.com/in/nicag/) 
-- (PORTFOLIO IN DEVELOPMENT)
+## 🔭 Current Research Vectors
 
+### Active Project: Systemic Racism Analysis
+[labrri_ocpm_systemic_racism](https://github.com/9scorp4/labrri_ocpm_systemic_racism)
+- 🔬 Data analysis toolkit
+- 📊 Multilingual document processing
+- 🔍 Systematic approach to social research
+- **Status**: In active development 
+- **Open to collaborative contributions**
 
+## 📈 Development Trajectory
 
+### 2024 Research & Technical Objectives
+- Deepen Python proficiency
+- Implement advanced NLP techniques
+- Complete master's thesis
+- Expand computational research methodologies
 
-<!--- Eraser file: https://app.eraser.io/workspace/EK4DaBR1pMoFisETez3n --->
+## 🌐 Professional Networks
+- [LinkedIn](https://www.linkedin.com/in/nicag/)
+- [GitHub](https://github.com/9scorp4)
+
+## 📊 Computational Footprint
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=9scorp4&theme=nord&show_icons=true&hide_border=true&count_private=true)
+
+*Inspired by systems thinking and the intersection of humanities and technology.*
