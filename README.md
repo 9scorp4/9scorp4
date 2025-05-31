@@ -1,51 +1,65 @@
-# Hey there, I'm Nicolas Arias Garcia 👋
+# Hi, I'm Nicolas 👋
 
-## 🔍 Research & Technology Interface
-*Digital anthropologist | Systems Thinker | Research Methodologist*
+## 🔍 About Me
 
-### 🚀 Professional Lens
-Bridging qualitative insights with computational techniques to transform complex social research. Specializing in innovative methodological approaches that integrate technology and human understanding.
+I'm a Master's student in Anthropology exploring the intersection of social research and computational methods. My work focuses on developing innovative approaches to understand complex social systems through the integration of qualitative insights with quantitative analysis.
 
-## 🛠️ Technical Ecosystem
+### 🌐 Current Focus
 
-### Languages & Tools
-- **Primary**: Python 
-  - Data analysis
-  - NLP pipelines
-  - Research automation
-- **Emerging Skills**: 
-  - R (in development)
-  - SQL fundamentals
+- **Digital Anthropology**: Researching systemic issues in urban contexts through computational approaches
+- **Systems Thinking**: Applying Gregory Bateson's systems theory to both research and code architecture
+- **Data Science for Social Good**: Building Python pipelines that bridge ethnographic methods with data analysis
+- **AI & Society**: Working as a data annotator, contributing to ethical AI development while studying its societal impacts
 
-### Methodological Toolkit
-- Mixed-methods research design
-- Computational social science
-- Multilingual text analysis
-- AI-assisted research techniques
+## 💡 Interdisciplinary Approach
 
-## 🔭 Current Research Vectors
+I believe in the power of combining traditional anthropological methods with modern computational tools. My approach is inspired by systems thinking - understanding not just individual components, but the patterns and relationships that connect them.
 
-### Active Project: Systemic Racism Analysis
-[labrri_ocpm_systemic_racism](https://github.com/9scorp4/labrri_ocpm_systemic_racism)
-- 🔬 Data analysis toolkit
-- 📊 Multilingual document processing
-- 🔍 Systematic approach to social research
-- **Status**: In active development 
-- **Open to collaborative contributions**
+### 🛠️ Technical Stack
 
-## 📈 Development Trajectory
+- **Languages**: Python (primary), with a focus on data analysis and automation
+- **Data Science**: pandas, NumPy, scikit-learn, NLP tools
+- **Visualization**: matplotlib, seaborn, network analysis
+- **Research Tools**: Qualitative data analysis, mixed-methods approaches
+- **Databases**: PostgreSQL, data modeling for complex social phenomena
 
-### 2024 Research & Technical Objectives
-- Deepen Python proficiency
-- Implement advanced NLP techniques
-- Complete master's thesis
-- Expand computational research methodologies
+## 🎯 What I'm Working On
 
-## 🌐 Professional Networks
-- [LinkedIn](https://www.linkedin.com/in/nicag/)
-- [GitHub](https://github.com/9scorp4)
+- Developing computational methods for analyzing qualitative research data
+- Creating tools that make social research more accessible and reproducible
+- Exploring how AI and machine learning can enhance (not replace) human understanding
+- Building bridges between academic research and practical applications
 
-## 📊 Computational Footprint
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=9scorp4&theme=nord&show_icons=true&hide_border=true&count_private=true)
+## 🌱 Learning Journey
 
-*Inspired by systems thinking and the intersection of humanities and technology.*
+As someone still growing in the coding world, I'm passionate about:
+- Writing clean, well-documented code that other researchers can understand
+- Applying systematic thinking to both research design and software architecture
+- Contributing to open-source projects that advance social research methods
+
+## 🤝 Collaboration
+
+I'm always interested in connecting with others working at the intersection of:
+- Social sciences and technology
+- Qualitative and quantitative methods
+- Systems thinking and software design
+- Ethical AI and social justice
+
+## 📚 Background
+
+- **Anthropology**: Ethnographic methods, cultural analysis, systems theory
+- **Language Documentation**: Experience with endangered language preservation
+- **Mixed Methods**: Combining computational approaches with traditional fieldwork
+- **Tech for Social Impact**: Using data science to address real-world challenges
+
+---
+
+*"The pattern which connects is a metapattern. It is a pattern of patterns."* - Gregory Bateson
+
+Feel free to explore my repositories to see how I'm applying these ideas in practice. I'm always open to discussions about research, methodology, or interesting computational approaches to understanding our complex social world.
+
+### 📫 Get in Touch
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/nicag/)
+- 📧 [Email](nicolas@anthropos-ai.com)
+- 🌐 SOON
