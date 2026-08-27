@@ -1,10 +1,15 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <img src="assets/banner.svg" alt="un jardín cibernético — ferns growing above a soil line, circuit-trace roots below" width="100%">
+</picture>
+
 # nicolas arias garcía
 
 *anthropologist · systems thinker · python for social research*
 
 a master's student in anthropology, working where social research meets computational methods — building python pipelines that put quantitative weight behind qualitative, ethnographic questions. there is a thesis; it is in the final, slightly tense stretch before submission.
 
-the day job is data annotation: training and evaluating ai models. it is also where the coding got real — somewhere between scripts that ran once and repositories a stranger could, in principle, read.
+the day job is data annotation: training and evaluating ai models. it is also where the coding got real — somewhere between scripts that ran once and repositories a stranger could, in principle, read. lately the work has widened: client websites built to outlive their developer, and a workshop of private experiments that surface here when they are ready to be seen.
 
 ---
 
@@ -20,6 +25,7 @@ the work runs on systems thinking, bateson's in particular: meaning lives in *re
 
 - **computational social research** — reproducible python pipelines for reading qualitative data on systemic problems, mostly at the scale of a city
 - **ai & society** — annotating the models on the clock; thinking about what they metabolise off it
+- **web work for real clients** — owner-editable, bilingual sites where the documentation is as much a deliverable as the code
 - **legible tooling** — code other researchers can run and trust, rather than admire from a safe distance
 
 ---
@@ -31,7 +37,10 @@ biological statuses, borrowed from the garden — ▲ growing · ◐ dormant · 
 | | project | what it is |
 |---|---|---|
 | ○ | **[un jardín cibernético](https://9scorp4.github.io)** | a personal site that declines to be a portfolio — field notes, generative p5.js sketches, research dispatches. a cybernetic garden, built with astro. |
+| ▲ | **[inhudins.org](https://inhudins.org)** | client work: rebuilding a research institute's site off google sites onto an owner-editable, bilingual stack — sveltekit, storyblok, cloudflare pages. the principle: content exists once and is referenced everywhere it appears. |
 | ◐ | **[annotation swiss knife](https://github.com/9scorp4/annotator-swiss-knife)** | cross-platform python toolkit, gui and cli, for data-annotation work. ~10k lines, 1,000+ tests, full ci/cd. it ships. |
+
+the rest of the garden is behind the hedge — private repos in various states of growth. they come out when they're ready.
 
 ---
 
@@ -43,10 +52,13 @@ biological statuses, borrowed from the garden — ▲ growing · ◐ dormant · 
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
+![Svelte](https://img.shields.io/badge/Svelte-FF3E00?style=flat-square&logo=svelte&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
 - **core** — python, for analysis and automation
 - **data** — pandas · numpy · scikit-learn · postgresql · nlp tooling
+- **web** — sveltekit · typescript · astro · headless cms · cloudflare
 - **showing the work** — matplotlib · seaborn · network analysis
 - **method** — mixed-methods research, qualitative analysis
 
