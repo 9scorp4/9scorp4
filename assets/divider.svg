@@ -1,0 +1,52 @@
+<svg viewBox="0 0 900 52" width="900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="a soil line with a data pulse running under it">
+<style>
+@keyframes draw{to{stroke-dashoffset:0;}}
+@keyframes fadein{from{opacity:0;}}
+@keyframes bloom{from{opacity:0;transform:scale(0);}to{opacity:0.95;transform:scale(1);}}
+@keyframes halo{from{opacity:0;}to{opacity:0.35;}}
+@keyframes breathe{0%,100%{opacity:0.95;}50%{opacity:0.5;}}
+@keyframes flow{from{stroke-dashoffset:820;}to{stroke-dashoffset:-205;}}
+@keyframes drift{0%,100%{opacity:0;transform:translateY(0);}20%{opacity:0.5;}50%{opacity:0.6;transform:translateY(-16px);}80%{opacity:0.25;}}
+circle,text{transform-box:fill-box;transform-origin:center;}
+text{font-family:'Courier New',monospace;}
+</style>
+
+<path d="M30.0,20.0 Q30.3,14.0 33.0,10.0" fill="none" stroke="#4a7a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" stroke-dasharray="11" stroke-dashoffset="11" style="animation:draw 0.13s ease-out 0.22s both"/>
+<path d="M67.0,20.0 Q66.6,14.6 63.0,11.0" fill="none" stroke="#4a7a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" stroke-dasharray="10" stroke-dashoffset="10" style="animation:draw 0.13s ease-out 0.24s both"/>
+<path d="M104.0,20.0 Q104.0,15.2 104.0,12.0" fill="none" stroke="#4a7a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" stroke-dasharray="8" stroke-dashoffset="8" style="animation:draw 0.10s ease-out 0.26s both"/>
+<path d="M141.0,20.0 Q141.4,15.8 145.0,13.0" fill="none" stroke="#4a7a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" stroke-dasharray="8" stroke-dashoffset="8" style="animation:draw 0.10s ease-out 0.28s both"/>
+<path d="M178.0,20.0 Q177.7,16.4 175.0,14.0" fill="none" stroke="#4a7a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" stroke-dasharray="7" stroke-dashoffset="7" style="animation:draw 0.09s ease-out 0.30s both"/>
+<path d="M215.0,20.0 Q215.1,17.0 216.0,15.0" fill="none" stroke="#4a7a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" stroke-dasharray="5" stroke-dashoffset="5" style="animation:draw 0.06s ease-out 0.32s both"/>
+<path d="M252.0,20.0 Q252.5,17.6 257.0,16.0" fill="none" stroke="#4a7a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" stroke-dasharray="7" stroke-dashoffset="7" style="animation:draw 0.08s ease-out 0.34s both"/>
+<path d="M289.0,20.0 Q288.8,12.8 287.0,8.0" fill="none" stroke="#4a7a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" stroke-dasharray="12" stroke-dashoffset="12" style="animation:draw 0.15s ease-out 0.36s both"/>
+<path d="M326.0,20.0 Q326.2,13.4 328.0,9.0" fill="none" stroke="#4a7a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" stroke-dasharray="11" stroke-dashoffset="11" style="animation:draw 0.14s ease-out 0.38s both"/>
+<path d="M363.0,20.0 Q362.5,14.0 358.0,10.0" fill="none" stroke="#4a7a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" stroke-dasharray="11" stroke-dashoffset="11" style="animation:draw 0.14s ease-out 0.40s both"/>
+<path d="M400.0,20.0 Q399.9,14.6 399.0,11.0" fill="none" stroke="#4a7a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" stroke-dasharray="9" stroke-dashoffset="9" style="animation:draw 0.11s ease-out 0.42s both"/>
+<path d="M437.0,20.0 Q437.3,15.2 440.0,12.0" fill="none" stroke="#4a7a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" stroke-dasharray="9" stroke-dashoffset="9" style="animation:draw 0.11s ease-out 0.44s both"/>
+<path d="M474.0,20.0 Q473.6,15.8 470.0,13.0" fill="none" stroke="#4a7a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" stroke-dasharray="8" stroke-dashoffset="8" style="animation:draw 0.10s ease-out 0.46s both"/>
+<path d="M511.0,20.0 Q511.0,16.4 511.0,14.0" fill="none" stroke="#4a7a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" stroke-dasharray="6" stroke-dashoffset="6" style="animation:draw 0.07s ease-out 0.48s both"/>
+<path d="M548.0,20.0 Q548.4,17.0 552.0,15.0" fill="none" stroke="#4a7a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" stroke-dasharray="7" stroke-dashoffset="7" style="animation:draw 0.08s ease-out 0.50s both"/>
+<path d="M585.0,20.0 Q584.7,17.6 582.0,16.0" fill="none" stroke="#4a7a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" stroke-dasharray="5" stroke-dashoffset="5" style="animation:draw 0.06s ease-out 0.53s both"/>
+<path d="M622.0,20.0 Q622.1,12.8 623.0,8.0" fill="none" stroke="#4a7a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" stroke-dasharray="12" stroke-dashoffset="12" style="animation:draw 0.15s ease-out 0.55s both"/>
+<path d="M659.0,20.0 Q659.5,13.4 664.0,9.0" fill="none" stroke="#4a7a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" stroke-dasharray="12" stroke-dashoffset="12" style="animation:draw 0.15s ease-out 0.57s both"/>
+<path d="M696.0,20.0 Q695.8,14.0 694.0,10.0" fill="none" stroke="#4a7a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" stroke-dasharray="10" stroke-dashoffset="10" style="animation:draw 0.13s ease-out 0.59s both"/>
+<path d="M733.0,20.0 Q733.2,14.6 735.0,11.0" fill="none" stroke="#4a7a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" stroke-dasharray="9" stroke-dashoffset="9" style="animation:draw 0.12s ease-out 0.61s both"/>
+<path d="M770.0,20.0 Q769.5,15.2 765.0,12.0" fill="none" stroke="#4a7a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" stroke-dasharray="10" stroke-dashoffset="10" style="animation:draw 0.12s ease-out 0.63s both"/>
+<path d="M807.0,20.0 Q806.9,15.8 806.0,13.0" fill="none" stroke="#4a7a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" stroke-dasharray="7" stroke-dashoffset="7" style="animation:draw 0.09s ease-out 0.65s both"/>
+<path d="M844.0,20.0 Q844.3,16.4 847.0,14.0" fill="none" stroke="#4a7a58" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" stroke-dasharray="7" stroke-dashoffset="7" style="animation:draw 0.09s ease-out 0.67s both"/>
+<line x1="18" y1="20" x2="882" y2="20" stroke="#3d2f1a" stroke-width="1.2" opacity="0.55"/>
+<path d="M40,42 L860,42" fill="none" stroke="#c08820" stroke-width="0.9" opacity="0.30" stroke-dasharray="820" stroke-dashoffset="820" style="animation:draw 2.2s ease-out 0.3s both"/>
+<path d="M40,42 L860,42" fill="none" stroke="#c08820" stroke-width="1.6" opacity="0.75" stroke-linecap="round" stroke-dasharray="5 200" style="animation:flow 7s linear 2s infinite"/>
+<path d="M90,21 L90,28 L98,36 L98,42" fill="none" stroke="#c08820" stroke-width="1.0" stroke-linecap="square" stroke-linejoin="round" opacity="0.55" stroke-dasharray="40" stroke-dashoffset="40" style="animation:draw 0.50s ease-out 0.50s both"/>
+<circle cx="98" cy="42" r="1.8" fill="#c08820" opacity="0" style="animation:fadein .5s ease-out 1.30s both;opacity:0.6"/>
+<path d="M210,21 L210,28 L218,36 L218,42" fill="none" stroke="#c08820" stroke-width="1.0" stroke-linecap="square" stroke-linejoin="round" opacity="0.55" stroke-dasharray="40" stroke-dashoffset="40" style="animation:draw 0.50s ease-out 0.63s both"/>
+<circle cx="218" cy="42" r="1.8" fill="#c08820" opacity="0" style="animation:fadein .5s ease-out 1.43s both;opacity:0.6"/>
+<path d="M380,21 L380,28 L388,36 L388,42" fill="none" stroke="#c08820" stroke-width="1.0" stroke-linecap="square" stroke-linejoin="round" opacity="0.55" stroke-dasharray="40" stroke-dashoffset="40" style="animation:draw 0.50s ease-out 0.82s both"/>
+<circle cx="388" cy="42" r="1.8" fill="#c08820" opacity="0" style="animation:fadein .5s ease-out 1.62s both;opacity:0.6"/>
+<path d="M520,21 L520,28 L528,36 L528,42" fill="none" stroke="#c08820" stroke-width="1.0" stroke-linecap="square" stroke-linejoin="round" opacity="0.55" stroke-dasharray="40" stroke-dashoffset="40" style="animation:draw 0.50s ease-out 0.98s both"/>
+<circle cx="528" cy="42" r="1.8" fill="#c08820" opacity="0" style="animation:fadein .5s ease-out 1.78s both;opacity:0.6"/>
+<path d="M690,21 L690,28 L698,36 L698,42" fill="none" stroke="#c08820" stroke-width="1.0" stroke-linecap="square" stroke-linejoin="round" opacity="0.55" stroke-dasharray="40" stroke-dashoffset="40" style="animation:draw 0.50s ease-out 1.17s both"/>
+<circle cx="698" cy="42" r="1.8" fill="#c08820" opacity="0" style="animation:fadein .5s ease-out 1.97s both;opacity:0.6"/>
+<path d="M820,21 L820,28 L828,36 L828,42" fill="none" stroke="#c08820" stroke-width="1.0" stroke-linecap="square" stroke-linejoin="round" opacity="0.55" stroke-dasharray="40" stroke-dashoffset="40" style="animation:draw 0.50s ease-out 1.31s both"/>
+<circle cx="828" cy="42" r="1.8" fill="#c08820" opacity="0" style="animation:fadein .5s ease-out 2.11s both;opacity:0.6"/>
+</svg>

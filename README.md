@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img src="assets/banner.svg" alt="un jardín cibernético — ferns growing above a soil line, circuit-trace roots below" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.webp">
+  <img src="assets/banner-light.webp" alt="an etching of a single fern above a soil line; below it, its root straightens into circuit-board traces" width="100%">
 </picture>
 
 # nicolas arias garcía
@@ -11,7 +11,10 @@ a master's student in anthropology, working where social research meets computat
 
 the day job is data annotation: training and evaluating ai models. it is also where the coding got real — somewhere between scripts that ran once and repositories a stranger could, in principle, read. lately the work has widened: client websites built to outlive their developer, and a workshop of private experiments that surface here when they are ready to be seen.
 
----
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
+  <img src="assets/divider.svg" alt="" width="100%">
+</picture>
 
 ## how i think
 
@@ -79,7 +82,10 @@ ethnographic methods · cultural analysis · systems theory · language document
 ---
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=9scorp4&show_icons=true&hide_border=true&bg_color=efe2c2&title_color=2d5a3d&text_color=3d2f1a&icon_color=c08820" alt="nico's github stats" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=9scorp4&show_icons=true&hide_border=true&bg_color=151b14&title_color=7aa886&text_color=d9c9a0&icon_color=d9a441">
+    <img src="https://github-readme-stats.vercel.app/api?username=9scorp4&show_icons=true&hide_border=true&bg_color=efe2c2&title_color=2d5a3d&text_color=3d2f1a&icon_color=c08820" alt="nico's github stats" />
+  </picture>
 </p>
 
 ---
@@ -87,7 +93,6 @@ ethnographic methods · cultural analysis · systems theory · language document
 ## elsewhere
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nicag/)
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:nicolas@anthropos-ai.com)
 
 [un jardín cibernético](https://9scorp4.github.io)
 

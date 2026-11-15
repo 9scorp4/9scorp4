@@ -1,4 +1,12 @@
-"""Garden banner v4 — designed, not scribbled.
+"""Garden banner v4 — designed, not scribbled. And the divider cut from it.
+
+Usage: gen_banner.py [divider] [dark]
+  (no mode)  the full banner: assets/banner.svg, assets/banner-dark.svg
+  divider    a slim strip of the same soil: stubble on the line, root traces
+             and the data bus with its moving pulse; transparent ground, so it
+             sits on GitHub's own page colour. assets/divider.svg, -dark.svg.
+             Since 2026-11-15 the README's banner is the etched fern (taller,
+             study 0 run 2) and this animated strip is the divider under it.
 
 Above the soil line: fern fronds (curved rachis + tapering pinnae), grass
 blades, gold seed stalks. Below: roots as circuit traces with pads and a
@@ -7,9 +15,10 @@ data bus carrying a moving pulse. Palette from the profile stats card.
 import math
 import sys
 
-W, H = 900, 230
-SOIL = 180
-DARK = len(sys.argv) > 1 and sys.argv[1] == "dark"
+DIVIDER = "divider" in sys.argv[1:]
+DARK = "dark" in sys.argv[1:]
+W, H = (900, 52) if DIVIDER else (900, 230)
+SOIL = 20 if DIVIDER else 180
 if DARK:
     CREAM = "#151b14"        # background (green-tinted near-black); also pad fill
     MOSS = "#7aa886"
@@ -135,89 +144,120 @@ def root_trace(bx, delay, jog, run, pad=True):
         )
 
 
-# ---- composition ----------------------------------------------------------
-# left-weighted plant cluster; right third stays open for the title
-
-frond(80, 150, -22, 0.9)
-frond(148, 175, 28, 0.5, n_pinnae=18)
-frond(215, 115, 42, 1.4, n_pinnae=13, color=MOSS_LIGHT)
-grass(115, 70, 14, 1.8)
-grass(185, 55, -10, 2.1)
-
-seed_stalk(300, 105, 18, 1.2)
-frond(370, 160, -24, 0.7, n_pinnae=17)
-grass(340, 60, -12, 2.3)
-
-frond(475, 130, 30, 1.1, n_pinnae=14)
-seed_stalk(560, 140, -14, 0.6)
-frond(625, 95, 20, 1.6, n_pinnae=11, color=MOSS_LIGHT)
-grass(600, 50, 10, 2.5)
-
-grass(835, 45, -8, 2.7)   # small accent under the title, right edge
-grass(858, 32, 6, 2.9)
-
-# stubble: short arcs along the soil line
-for sx, sh, sl in [(55, 12, 5), (250, 10, -4), (415, 13, 6), (520, 9, -5),
-                   (665, 11, 4), (720, 8, -3), (770, 10, 5)]:
-    grass(sx, sh, sl, 2.0 + sx / 900.0, color=MOSS_LIGHT)
-
-# ---- soil line ------------------------------------------------------------
-elems.append(
-    f'<line x1="18" y1="{SOIL}" x2="{W - 18}" y2="{SOIL}" stroke="{BROWN}" '
-    f'stroke-width="1.3" opacity="0.55"/>'
-)
-
-# ---- roots: circuit traces + bus ------------------------------------------
-BUS_Y = 212
-bus_d = f"M40,{BUS_Y} L{W - 40},{BUS_Y}"
-elems.append(
-    f'<path d="{bus_d}" fill="none" stroke="{GOLD}" stroke-width="0.9" '
-    f'opacity="0.30" stroke-dasharray="{W - 80}" stroke-dashoffset="{W - 80}" '
-    f'style="animation:draw 2.2s ease-out 0.3s both"/>'
-)
-# moving data pulse on the bus
-elems.append(
-    f'<path d="{bus_d}" fill="none" stroke="{GOLD}" stroke-width="1.6" '
-    f'opacity="0.75" stroke-linecap="round" stroke-dasharray="5 200" '
-    f'style="animation:flow 7s linear 3s infinite"/>'
-)
-
-for bx, jog, run in [(80, 4, 60), (148, 10, -45), (300, 2, 80), (370, 8, -60),
-                     (475, 5, 55), (560, 12, 70), (625, 3, -50)]:
-    root_trace(bx, 0.4 + bx / 900.0, jog, run)
-# stubs dropping from pads to the bus
-for sx in [148 + 8 - 45, 370 + 8 - 60, 560 + 8 + 70]:
-    d = f"M{sx:.1f},{SOIL + 22} L{sx:.1f},{BUS_Y}"
-    stroke(d, GOLD, 0.8, BUS_Y - SOIL - 22, 1.8, 0.4, opacity=0.4, cap="square")
-# vias on the bus
-for vx in [120, 340, 480, 640, 760]:
+# ---- divider: the soil and the bus only ----------------------------------
+def divider():
+    for sx in range(30, W - 20, 37):
+        h = 4 + (sx * 7919 % 9)
+        grass(sx, h, (sx % 11) - 5, 0.2 + sx / 1800.0, color=MOSS_LIGHT)
     elems.append(
-        f'<circle cx="{vx}" cy="{BUS_Y}" r="1.8" fill="{GOLD}" opacity="0" '
-        f'style="animation:fadein .5s ease-out {2.0 + vx / 900.0:.2f}s both;'
-        f'opacity:0.5"/>'
+        f'<line x1="18" y1="{SOIL}" x2="{W - 18}" y2="{SOIL}" stroke="{BROWN}" '
+        f'stroke-width="1.2" opacity="0.55"/>')
+    bus_y = 42
+    bus_d = f"M40,{bus_y} L{W - 40},{bus_y}"
+    elems.append(
+        f'<path d="{bus_d}" fill="none" stroke="{GOLD}" stroke-width="0.9" '
+        f'opacity="0.30" stroke-dasharray="{W - 80}" stroke-dashoffset="{W - 80}" '
+        f'style="animation:draw 2.2s ease-out 0.3s both"/>')
+    elems.append(
+        f'<path d="{bus_d}" fill="none" stroke="{GOLD}" stroke-width="1.6" '
+        f'opacity="0.75" stroke-linecap="round" stroke-dasharray="5 200" '
+        f'style="animation:flow 7s linear 2s infinite"/>')
+    for bx in [90, 210, 380, 520, 690, 820]:
+        d = f"M{bx},{SOIL + 1} L{bx},{SOIL + 8} L{bx + 8},{SOIL + 16} L{bx + 8},{bus_y}"
+        stroke(d, GOLD, 1.0, 40, 0.4 + bx / 900.0, 0.5, opacity=0.55, cap="square")
+        elems.append(
+            f'<circle cx="{bx + 8}" cy="{bus_y}" r="1.8" fill="{GOLD}" opacity="0" '
+            f'style="animation:fadein .5s ease-out {1.2 + bx / 900.0:.2f}s both;opacity:0.6"/>')
+
+
+def banner():
+    # ---- composition ----------------------------------------------------------
+    # left-weighted plant cluster; right third stays open for the title
+
+    frond(80, 150, -22, 0.9)
+    frond(148, 175, 28, 0.5, n_pinnae=18)
+    frond(215, 115, 42, 1.4, n_pinnae=13, color=MOSS_LIGHT)
+    grass(115, 70, 14, 1.8)
+    grass(185, 55, -10, 2.1)
+
+    seed_stalk(300, 105, 18, 1.2)
+    frond(370, 160, -24, 0.7, n_pinnae=17)
+    grass(340, 60, -12, 2.3)
+
+    frond(475, 130, 30, 1.1, n_pinnae=14)
+    seed_stalk(560, 140, -14, 0.6)
+    frond(625, 95, 20, 1.6, n_pinnae=11, color=MOSS_LIGHT)
+    grass(600, 50, 10, 2.5)
+
+    grass(835, 45, -8, 2.7)   # small accent under the title, right edge
+    grass(858, 32, 6, 2.9)
+
+    # stubble: short arcs along the soil line
+    for sx, sh, sl in [(55, 12, 5), (250, 10, -4), (415, 13, 6), (520, 9, -5),
+                       (665, 11, 4), (720, 8, -3), (770, 10, 5)]:
+        grass(sx, sh, sl, 2.0 + sx / 900.0, color=MOSS_LIGHT)
+
+    # ---- soil line ------------------------------------------------------------
+    elems.append(
+        f'<line x1="18" y1="{SOIL}" x2="{W - 18}" y2="{SOIL}" stroke="{BROWN}" '
+        f'stroke-width="1.3" opacity="0.55"/>'
     )
 
-# ---- spores ---------------------------------------------------------------
-for i, (sx, sy, dl) in enumerate([(240, 70, 4), (520, 55, 6), (690, 90, 8),
-                                  (420, 45, 10)]):
+    # ---- roots: circuit traces + bus ------------------------------------------
+    BUS_Y = 212
+    bus_d = f"M40,{BUS_Y} L{W - 40},{BUS_Y}"
     elems.append(
-        f'<circle cx="{sx}" cy="{sy}" r="1.6" fill="{GOLD}" opacity="0" '
-        f'style="animation:drift 11s ease-in-out {dl}s infinite"/>'
+        f'<path d="{bus_d}" fill="none" stroke="{GOLD}" stroke-width="0.9" '
+        f'opacity="0.30" stroke-dasharray="{W - 80}" stroke-dashoffset="{W - 80}" '
+        f'style="animation:draw 2.2s ease-out 0.3s both"/>'
+    )
+    # moving data pulse on the bus
+    elems.append(
+        f'<path d="{bus_d}" fill="none" stroke="{GOLD}" stroke-width="1.6" '
+        f'opacity="0.75" stroke-linecap="round" stroke-dasharray="5 200" '
+        f'style="animation:flow 7s linear 3s infinite"/>'
     )
 
-# ---- title ----------------------------------------------------------------
-elems.append(
-    f'<text x="{W - 36}" y="86" text-anchor="end" font-size="17" '
-    f'fill="{BROWN}" opacity="0" style="animation:fadein 1.2s ease-out 2.6s both;'
-    f'opacity:0.9">un jardín cibernético</text>'
-)
-elems.append(
-    f'<text x="{W - 36}" y="106" text-anchor="end" font-size="10.5" '
-    f'fill="{MOSS}" opacity="0" style="animation:fadein 1.2s ease-out 3.1s both;'
-    f'opacity:0.7">▲ growing · ◐ dormant · ○ wild</text>'
-)
+    for bx, jog, run in [(80, 4, 60), (148, 10, -45), (300, 2, 80), (370, 8, -60),
+                         (475, 5, 55), (560, 12, 70), (625, 3, -50)]:
+        root_trace(bx, 0.4 + bx / 900.0, jog, run)
+    # stubs dropping from pads to the bus
+    for sx in [148 + 8 - 45, 370 + 8 - 60, 560 + 8 + 70]:
+        d = f"M{sx:.1f},{SOIL + 22} L{sx:.1f},{BUS_Y}"
+        stroke(d, GOLD, 0.8, BUS_Y - SOIL - 22, 1.8, 0.4, opacity=0.4, cap="square")
+    # vias on the bus
+    for vx in [120, 340, 480, 640, 760]:
+        elems.append(
+            f'<circle cx="{vx}" cy="{BUS_Y}" r="1.8" fill="{GOLD}" opacity="0" '
+            f'style="animation:fadein .5s ease-out {2.0 + vx / 900.0:.2f}s both;'
+            f'opacity:0.5"/>'
+        )
 
-svg = f'''<svg viewBox="0 0 {W} {H}" width="{W}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="un jardín cibernético — ferns growing above a soil line, circuit-trace roots below">
+    # ---- spores ---------------------------------------------------------------
+    for i, (sx, sy, dl) in enumerate([(240, 70, 4), (520, 55, 6), (690, 90, 8),
+                                      (420, 45, 10)]):
+        elems.append(
+            f'<circle cx="{sx}" cy="{sy}" r="1.6" fill="{GOLD}" opacity="0" '
+            f'style="animation:drift 11s ease-in-out {dl}s infinite"/>'
+        )
+
+    # ---- title ----------------------------------------------------------------
+    elems.append(
+        f'<text x="{W - 36}" y="86" text-anchor="end" font-size="17" '
+        f'fill="{BROWN}" opacity="0" style="animation:fadein 1.2s ease-out 2.6s both;'
+        f'opacity:0.9">un jardín cibernético</text>'
+    )
+    elems.append(
+        f'<text x="{W - 36}" y="106" text-anchor="end" font-size="10.5" '
+        f'fill="{MOSS}" opacity="0" style="animation:fadein 1.2s ease-out 3.1s both;'
+        f'opacity:0.7">▲ growing · ◐ dormant · ○ wild</text>'
+    )
+
+
+
+divider() if DIVIDER else banner()
+
+svg = f'''<svg viewBox="0 0 {W} {H}" width="{W}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{'a soil line with a data pulse running under it' if DIVIDER else 'un jardín cibernético — ferns growing above a soil line, circuit-trace roots below'}">
 <style>
 @keyframes draw{{to{{stroke-dashoffset:0;}}}}
 @keyframes fadein{{from{{opacity:0;}}}}
@@ -229,11 +269,11 @@ svg = f'''<svg viewBox="0 0 {W} {H}" width="{W}" xmlns="http://www.w3.org/2000/s
 circle,text{{transform-box:fill-box;transform-origin:center;}}
 text{{font-family:'Courier New',monospace;}}
 </style>
-<rect width="{W}" height="{H}" fill="{CREAM}" rx="8"/>
+{"" if DIVIDER else f'<rect width="{W}" height="{H}" fill="{CREAM}" rx="8"/>'}
 {chr(10).join(elems)}
 </svg>'''
 
-name = "banner-dark.svg" if DARK else "banner.svg"
+name = ("divider" if DIVIDER else "banner") + ("-dark" if DARK else "") + ".svg"
 out = f"assets/{name}"
 with open(out, "w") as f:
     f.write(svg)
